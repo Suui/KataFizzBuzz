@@ -19,5 +19,17 @@ namespace KataFizzBuzzTest
 		{
 			FizzBuzz.Say(3).Should().Be("Fizz");
 		}
+
+		[Test]
+		public void say_buzz_when_the_number_is_divisble_by_five()
+		{
+			FizzBuzz.Say(5).Should().Be("Buzz");
+		}
+
+		[Test]
+		public void say_fizzbuzz_when_the_number_is_divisible_by_three_and_five()
+		{
+			FizzBuzz.Say(3 * 5).Should().Be("FizzBuzz");
+		}
 	}
 }
